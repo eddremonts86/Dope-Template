@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@400&family=Staatliches&family=Work+Sans&display=swap");
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.flex-container {
+  height: 100vh;
+  padding: 0px;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.row {
+  width: auto;
+  border: 0;
+}
+
+body {
+  background: #b0c0c9;
+  font-family: "Work Sans", sans-serif;
+}
+
+body .main {
+  background: #fff;
+  max-height: 100vh;
+  max-width: 1380px;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 70px auto;
+      grid-template-rows: 70px auto;
+  position: relative;
+      grid-template-areas: "_logo _menu _menu " "_sliders_container _sliders_container _sliders_container";
+}
+
+body .main .logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: _logo;
+  height: 70px;
+}
+
+body .main .logo .logo_text {
+  font-size: 25px;
+  font-weight: 900;
+  text-align: left;
+  padding-left: 15px;
+  font-family: "Staatliches", cursive;
+  letter-spacing: 8px;
+}
+
+body .main .menu {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: _menu;
+  background-image: url(../images/base.jpeg);
+  background-repeat: repeat;
+  height: 70px;
+  color: #ffffffa6;
+}
+
+body .main .menu .logo_text {
+  font-size: 25px;
+  font-weight: 400;
+  text-align: left;
+  padding-left: 35px;
+}
+
+body .main .sliders_container {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: _sliders_container;
+  background-color: #1e32a5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .main .sliders_container .sliders {
+  grid-area: _sliders;
+  background-color: #fff;
+  width: 50%;
+  padding-left: 15px;
+}
+
+body .main .sliders_container .sliders_content {
+  grid-area: _sliders_content;
+  background-image: url(../images/base.jpeg);
+  background-repeat: repeat;
+  color: #fff;
+  width: 50%;
+}
+
+body .main .sliders_container .sliders_content .content {
+  padding: 50px;
+}
+
+body .main .sliders_container .sliders_content h1 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 5rem;
+}
+
+body .main .sliders_container #sliders_images {
+  grid-area: _slider_info;
+  position: relative;
+  z-index: 50;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .main .sliders_container #sliders_images .w3-center.indicators {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  width: calc(70px * 2);
+}
+
+body .main .sliders_container #sliders_images .w3-center.indicators a {
+  padding: 6px;
+  border-radius: 100%;
+  border: 0;
+  margin: 5px 15px;
+  background-color: #e6e6e66e;
+  border: 1px solid #fe52086e;
+  width: 0px;
+  height: 0px;
+}
+
+body .main .sliders_container #sliders_images .w3-center.indicators a:active {
+  background-color: #fe5208;
+}
+
+body .main .sliders_container #sliders_images .w3-center.indicators a:hover {
+  background-color: #fe5208;
+}
+
+body .main .sliders_container #sliders_images img {
+  border-radius: 0px;
+  width: 100%;
+  height: auto;
+  max-height: 900px;
+  margin-bottom: 25px;
+}
+
+body .footer {
+  position: absolute;
+  z-index: 40;
+  width: 500px;
+  left: 30%;
+  bottom: 0;
+  background-color: #fe5208;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 50px;
+  height: 80px;
+}
+
+body .footer p {
+  font-size: 18px;
+}
+
+body .go_to_right {
+  text-align: right;
+}
+
+body .go_to_left {
+  text-align: left;
+}
+/*# sourceMappingURL=styles.css.map */
