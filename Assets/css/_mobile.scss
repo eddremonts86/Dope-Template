@@ -1,0 +1,148 @@
+@media (max-width: 1024px) {
+  body {
+    .main {
+      grid-template-areas:
+        "_logo _menu "
+        "_sliders_container";
+        .logo{
+          display: flex;
+          align-items: center;
+          
+          .logo_text{
+            font-size: 2rem;
+          }
+        }
+      .sliders_container {
+        .sliders_content{
+          .content{
+            padding: 20px;
+          }
+          h1{
+            font-size: 4rem;
+          }
+        }}
+      }
+  }
+}
+
+
+@media (max-height: 850px) {
+  body {
+    .main {
+        .footer {
+          position: relative;
+          z-index: 40;
+          width: auto;
+          left: 0;
+          bottom: 0;
+        }
+      }
+  }
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  body {
+    background: #b0c0c9;
+    font-family: "Work Sans", sans-serif;
+    .main {
+      grid-template-areas:
+        "_logo _menu "
+        "_sliders_container";
+        .logo{
+          display: flex;
+          align-items: center;
+          
+          .logo_text{
+            font-size: 2rem;
+          }
+        }
+      .sliders_container {
+        display: grid;
+        grid-template-areas:
+          "_sliders "
+          "_sliders_content";
+
+        .sliders,
+        .sliders_content {
+          width: 100%;
+        }
+        .sliders{
+          padding: 0;
+        }
+        .sliders_content{
+          h1{
+            font-size: 3rem;
+          }
+        }
+
+        #sliders_images {
+          .w3-center {
+            &.indicators {
+              position: absolute;
+              left: 10px;
+              a {
+                border: 1px solid #fe52086e;
+                background-color: #fe52086e ;
+              }
+            }
+            
+          }
+          img{
+            margin: 0;
+          }
+        }
+      }
+      .footer {
+        position: relative;
+        z-index: 40;
+        width: auto;
+        left: 0;
+        bottom: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  body {
+    background: #b0c0c9;
+    font-family: "Work Sans", sans-serif;
+    .main {
+      grid-template-areas:
+        "_logo _menu "
+        "_sliders_container";
+        .logo{
+          display: flex;
+          align-items: center;
+
+          .logo_text{
+            font-size: 1rem;
+          }
+        }
+      .sliders_container {
+        display: grid;
+        grid-template-areas:
+          "_sliders "
+          "_sliders_content";
+
+        .sliders,
+        .sliders_content {
+          width: 100%;
+        }
+        .sliders{
+          padding: 0;
+        }
+        .sliders_content{
+          h1{
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
